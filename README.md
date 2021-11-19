@@ -22,6 +22,12 @@ This class consists of 3 chapters:
 - Chapter 2: Tools - Detailed description on how to use each tool and software asset
 - Chapter 3: RTOS - Introduction to RTOS in general and FreeRTOS specifically
 
+## Hardware
+
+The following hardware is used for the exercises in this class:
+
+- CY8CKIT-062S2-43012 (PSoC™ 62S2 Wi-Fi BT Pioneer Kit)
+
 ## References
 
 Additional information can be found at:
