@@ -17,10 +17,9 @@ This is a "Level 1" class, meaning that it is intended as an entry point to get 
 
 ## Manual Chapters
 
-This class consists of 3 chapters:
+This class consists of 2 chapters:
 - Chapter 1: Introduction - Overall introduction to the ModusToolbox™ ecosystem
 - Chapter 2: Tools - Detailed description on how to use each tool and software asset
-- Chapter 3: RTOS - Introduction to RTOS in general and FreeRTOS specifically
 
 ## Hardware
 
