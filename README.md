@@ -2,7 +2,7 @@
 
 This is the entry-level ModusToolbox™ training class. It is a pre-requisite for all level 2 and level 3 ModusToolbox™ training classes.
 
-This class is a survey of the ModusToolbox™ development platform. The learning objective is to introduce you to all the tools in the ModusToolbox™ ecoysystem and help you develop some familiarity with using them. The class is “a mile wide and an inch deep”. This should enable you to understand the scope of the development ecosystem and teach you where to find “everything”.
+This class is a survey of the ModusToolbox™ development platform. The learning objective is to introduce you to all the tools in the ModusToolbox™ ecoysystem and help you develop some familiarity with using them. The class is “a mile wide and an inch deep.” This should enable you to understand the scope of the development ecosystem and teach you where to find “everything.”
 
 This is a "Level 1" class, which means that it is intended as an entry point to get you started with the ModusToolbox™ ecosystem. Level 2 classes dig deeper to give more detailed training on specific products such as PSoC™ or XMC MCUs. Level 3 classes go even further by diving into a complete solution such as Bluetooth®, Wi-Fi, Motor Control, or Machine Learning.
 
@@ -27,7 +27,7 @@ The following hardware is used for the exercises in this class:
 
 - CY8CKIT-062S2-43012 (PSoC™ 62S2 Wi-Fi BT Pioneer Kit)
 
-As an alternative, the following kit can be used as a less expensive option. 
+As a less exspensive alternative, the following kit can be used:
 
 - CY8CPROTO-062-4343W (PSoC™ 62 Wi-Fi BT Prototyping Kit)
 
