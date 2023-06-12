@@ -31,7 +31,7 @@ As a less exspensive alternative, the following kit can be used:
 
 - CY8CPROTO-062-4343W (PSoC™ 62 Wi-Fi BT Prototyping Kit)
 
-*The prototyping kit only has one LED, one user button, and no Auduino expansion header so it does not provide as much functionality as the Pioneer kit.*
+*The prototyping kit doesn't have an Auduino expansion header and does not have as many user buttons or LEDs so it does not provide as much functionality as the Pioneer kit.*
 
 ## Videos
 
