@@ -27,8 +27,9 @@ The following hardware is used for the exercises in this class:
 
 - CY8CKIT-062S2-43012 (PSoC™ 62S2 Wi-Fi BT Pioneer Kit)
 
-As a less exspensive alternative, one of the following kits can be used:
+As an alternative, one of the following kits can be used:
 
+- CYW920829M2EVK-02 (AIROC™ CYW20829 Bluetooth® Low Energy SoC Evaluation Kit)
 - CY8CPROTO-062-4343W or CY8CPROTO-062S2-43439 (PSoC™ 62 Wi-Fi BT Prototyping Kits)
 
 *The prototyping kits don't have Auduino expansion headers and do not have as many user buttons or LEDs so they do not provide as much functionality as the Pioneer kit.*
