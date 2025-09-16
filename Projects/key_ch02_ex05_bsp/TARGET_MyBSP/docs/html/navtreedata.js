@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "CY8CKIT-062S2-43012 BSP", "index.html", [
+  [ "KIT_PSC3M5_EVK BSP", "index.html", [
     [ "Overview", "index.html#autotoc_md1", null ],
     [ "Features", "index.html#autotoc_md2", [
       [ "Kit Features:", "index.html#autotoc_md3", null ],
@@ -44,7 +44,7 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"group__group__bsp__bt.html"
+"group__group__bsp__dsram__functions.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

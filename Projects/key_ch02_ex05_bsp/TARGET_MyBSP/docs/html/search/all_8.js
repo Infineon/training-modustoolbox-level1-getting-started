@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['peripheral_20default_20bsp_20settings_0',['Peripheral Default BSP Settings',['../md_source_bsps_cat1a_CY8CKIT_062S2_43012_bsp_settings.html',1,'']]],
-  ['pin_20mappings_1',['Pin Mappings',['../group__group__bsp__pins.html',1,'']]],
-  ['pin_20states_2',['Pin States',['../group__group__bsp__pin__state.html',1,'']]]
+  ['syspmbspdeepsleepentrypoint_0',['syspmBspDeepSleepEntryPoint',['../group__group__bsp__dsram__functions.html#ga2f87313c9926c64f8f8cac002a3b0e2f',1,'syspmBspDeepSleepEntryPoint():&#160;cybsp_dsram.c'],['../group__group__bsp__dsram__functions.html#ga2f87313c9926c64f8f8cac002a3b0e2f',1,'syspmBspDeepSleepEntryPoint():&#160;cybsp_dsram.c']]]
 ];

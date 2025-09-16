@@ -6,10 +6,6 @@ This class is a survey of the ModusToolbox™ development platform. The learning
 
 This is a "Level 1" class, which means that it is intended as an entry point to get you started with the ModusToolbox™ ecosystem. Level 2 classes dig deeper to give more detailed training on specific products such as PSoC™ or XMC MCUs. Level 3 classes go even further by diving into a complete solution such as Bluetooth®, Wi-Fi, Motor Control, or Machine Learning.
 
-## Pre-requisites
-
-- None
-
 ## Organization
 
 - *Manual*:    This directory contains the manual chapters.
@@ -20,19 +16,6 @@ This is a "Level 1" class, which means that it is intended as an entry point to 
 This class consists of two chapters:
 - Chapter 1: Introduction - Overall introduction to the ModusToolbox™ ecosystem
 - Chapter 2: Tools - Detailed description of how to use each tool and software asset
-
-## Hardware
-
-The following hardware is used for the exercises in this class:
-
-- CY8CKIT-062S2-43012 (PSoC™ 62S2 Wi-Fi BT Pioneer Kit)
-
-As an alternative, one of the following kits can be used:
-
-- CYW920829M2EVK-02 (AIROC™ CYW20829 Bluetooth® Low Energy SoC Evaluation Kit)
-- CY8CPROTO-062-4343W or CY8CPROTO-062S2-43439 (PSoC™ 62 Wi-Fi BT Prototyping Kits)
-
-*The prototyping kits don't have Auduino expansion headers and do not have as many user buttons or LEDs so they do not provide as much functionality as the Pioneer kit.*
 
 ## Videos
 
@@ -47,7 +30,19 @@ Videos are available for many of the topics from this class. See the list below 
 | [Exploring an application](https://e.video-cdn.net/share?video-id=5NozBTozrJVSHmCK5Gj5Ys&player-id=2t2W2ykrDB_RisZ1QorEJU&channel-id=89141) | Now that your ModusToolbox™ application has been created, this video will explore the folder structure. We'll cover the location of Board Support Package files, shared libraries, and ModusToolbox™ workflow files. Our goal is to help demystify how the various files are used and enable the developer to take full advantage of the flexibility provided by the ModusToolbox™ development environment. |
 | [Working with the command line](https://e.video-cdn.net/share?video-id=DgUU1RU5KBnPrQmRvHh1g_&player-id=2t2W2ykrDB_RisZ1QorEJU&channel-id=89141) | In this video we'll discuss and walk through using the command-line interface supported by ModusToolbox™. This video covers the many features and commands that are available within the ModusToolbox™ make-based build system. |
 
+## Pre-requisites
+
+- None
+
+## Hardware
+
+The following hardware is used for the exercises in this class:
+
+- PSOC™ Control C3 MCU Evaluation Kit (KIT_PSC3M5_EVK) 
+
+Almost any Infineon kit that is compatible with ModusToolbox can be used. You can find those kits using the Project Creator tool.
+
 ## References
 
 Additional information can be found at:
-- https://www.cypress.com/products/modustoolbox 
+- https://www.infineon.com/design-resources/development-tools/sdk/modustoolbox-software

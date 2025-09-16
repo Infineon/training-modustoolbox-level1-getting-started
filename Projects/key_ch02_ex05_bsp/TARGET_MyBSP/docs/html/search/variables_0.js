@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['cybsp_5fbt_5fplatform_5fcfg_0',['cybsp_bt_platform_cfg',['../group__group__bsp__bt.html#gad2a1cd8a260feac884c816510f34c23e',1,'cybsp_bt_platform_cfg():&#160;cybsp_bt_config.c'],['../group__group__bsp__bt.html#gad2a1cd8a260feac884c816510f34c23e',1,'cybsp_bt_platform_cfg():&#160;cybsp_bt_config.c']]]
+  ['syspmbspdeepsleepentrypoint_0',['syspmBspDeepSleepEntryPoint',['../group__group__bsp__dsram__functions.html#ga2f87313c9926c64f8f8cac002a3b0e2f',1,'syspmBspDeepSleepEntryPoint():&#160;cybsp_dsram.c'],['../group__group__bsp__dsram__functions.html#ga2f87313c9926c64f8f8cac002a3b0e2f',1,'syspmBspDeepSleepEntryPoint():&#160;cybsp_dsram.c']]]
 ];

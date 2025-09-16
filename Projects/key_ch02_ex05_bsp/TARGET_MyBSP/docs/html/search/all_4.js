@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['functions_0',['Functions',['../group__group__bsp__functions.html',1,'']]]
+  ['kit_5fpsc3m5_5fevk_20bsp_0',['KIT_PSC3M5_EVK BSP',['../index.html',1,'']]]
 ];
