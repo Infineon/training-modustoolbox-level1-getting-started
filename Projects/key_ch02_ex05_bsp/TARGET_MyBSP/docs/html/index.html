@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>CY8CKIT-062S2-43012 BSP</title>
+<title>KIT_PSC3M5_EVK BSP</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -27,7 +27,7 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><a href="http://www.cypress.com/"><img alt="Logo" src="logo.png"/></a></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">CY8CKIT-062S2-43012 BSP</div>
+   <div id="projectname">KIT_PSC3M5_EVK BSP</div>
   </td>
  </tr>
  </tbody>
@@ -83,13 +83,13 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">CY8CKIT-062S2-43012 BSP </div></div>
+  <div class="headertitle"><div class="title">KIT_PSC3M5_EVK BSP </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p ><a class="anchor" id="md_output_bsps_TARGET_CY8CKIT_062S2_43012_README"></a> </p>
+<div class="textblock"><p ><a class="anchor" id="md_output_bsps_TARGET_KIT_PSC3M5_EVK_README"></a> </p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Overview</h1>
-<p >The CY8CKIT-062S2-43012 PSoC™ 6S2 Wi-Fi BT Pioneer Kit is a low-cost hardware platform that enables design and debug of PSoC™ 6 MCUs. It comes with a Murata 1LV Module (CYW43012 Wi-Fi + Bluetooth Combo Chip), industry-leading CAPSENSE™ for touch buttons and slider, on-board debugger/programmer with KitProg3, microSD card interface, 512-Mb Quad-SPI NOR flash, PDM-PCM microphone interface.</p>
+<p >The PSOC™ Control C3 MCU Evaluation Kit (KIT_PSC3M5_EVK) is based on the PSOC™ Control family of devices. It enables the evaluation and development of applications for the PSOC™ Control C3 MCU.</p>
 <p ><img src="board.png" alt="" class="inline"/></p>
 <p >To use code from the BSP, simply include a reference to <code>cybsp.h</code>.</p>
 <h1><a class="anchor" id="autotoc_md2"></a>
@@ -97,23 +97,25 @@ Features</h1>
 <h2><a class="anchor" id="autotoc_md3"></a>
 Kit Features:</h2>
 <ul>
-<li>Support of up to 2MB Flash and 1MB SRAM</li>
-<li>Dedicated SDHC to interface with WICED wireless devices.</li>
-<li>Delivers dual-cores, with a 150-MHz Arm Cortex-M4 as the primary application processor and a 100-MHz Arm Cortex-M0+ as the secondary processor for low-power operations.</li>
-<li>Supports Full-Speed USB, capacitive-sensing with CAPSENSE, a PDM-PCM digital microphone interface, a Quad- SPI interface, 13 serial communication blocks, 7 programmable analog blocks, and 56 programmable digital blocks.</li>
+<li>PSoC™ Control C3M5 (Arm® Cortex®-M33 based) Microcontroller</li>
+<li>PSOC™ 5LP based KitProg3 programmer and debugger with USB Type-C connector</li>
+<li>Two user LEDs, two user buttons, and a reset button for the PSC3M5</li>
+<li>Headers compatible with MIKROE’s mikroBUS shields</li>
+<li>Headers compatible with Arduino Uno R3</li>
+<li>Mode button and a mode LED for KitProg3</li>
+<li>Potentiometer that can be used to simulate analog sensor output</li>
 </ul>
 <h2><a class="anchor" id="autotoc_md4"></a>
 Kit Contents:</h2>
 <ul>
-<li>PSoC™ 6S2 Wi-Fi BT Pioneer Board</li>
-<li>USB Type-A to Micro-B cable</li>
-<li>Quick Start Guide</li>
-<li>Four jumper wires (4 inches each)</li>
-<li>Two jumper wires (5 inches each)</li>
+<li>PSOC™ Control C3M5 Evaluation Kit</li>
+<li>USB Type-A to Type-C cable</li>
+<li>Jumper wires</li>
+<li>Quick start guide (printed on kit package)</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md5"></a>
 BSP Configuration</h1>
-<p >The BSP has a few hooks that allow its behavior to be configured. Some of these items are enabled by default while others must be explicitly enabled. Items enabled by default are specified in the CY8CKIT-062S2-43012.mk file. The items that are enabled can be changed by creating a custom BSP or by editing the application makefile.</p>
+<p >The BSP has a few hooks that allow its behavior to be configured. Some of these items are enabled by default while others must be explicitly enabled. Items enabled by default are specified in the KIT_PSC3M5_EVK.mk file. The items that are enabled can be changed by creating a custom BSP or by editing the application makefile.</p>
 <p >Components:</p><ul>
 <li>Device specific category reference (e.g.: CAT1) - This component, enabled by default, pulls in any device specific code for this board.</li>
 </ul>
@@ -130,34 +132,40 @@ Clock Configuration</h2>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone">FLL   </td><td class="markdownTableBodyNone">IMO   </td><td class="markdownTableBodyNone">100.0 MHz    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone">PLL   </td><td class="markdownTableBodyNone">IMO   </td><td class="markdownTableBodyNone">48.0 MHz    </td></tr>
+<td class="markdownTableBodyNone">CLK_HF0   </td><td class="markdownTableBodyNone">CLK_PATH1   </td><td class="markdownTableBodyNone">180 MHz    </td></tr>
 <tr class="markdownTableRowOdd">
-<td class="markdownTableBodyNone">CLK_HF0   </td><td class="markdownTableBodyNone">CLK_PATH0   </td><td class="markdownTableBodyNone">100 MHz   </td></tr>
+<td class="markdownTableBodyNone">CLK_HF1   </td><td class="markdownTableBodyNone">CLK_PATH1   </td><td class="markdownTableBodyNone">180 MHz    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">CLK_HF2   </td><td class="markdownTableBodyNone">CLK_PATH0   </td><td class="markdownTableBodyNone">100 MHz    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">CLK_HF3   </td><td class="markdownTableBodyNone">CLK_PATH2   </td><td class="markdownTableBodyNone">240 MHz    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">CLK_HF4   </td><td class="markdownTableBodyNone">CLK_PATH0   </td><td class="markdownTableBodyNone">100 MHz   </td></tr>
 </table>
 <h2><a class="anchor" id="autotoc_md7"></a>
 Power Configuration</h2>
 <ul>
-<li>System Active Power Mode: LP</li>
-<li>System Idle Power Mode: Deep Sleep</li>
+<li>System Active Power Mode: OD</li>
+<li>System Idle Power Mode: CPU Sleep</li>
 <li>VDDA Voltage: 3300 mV</li>
 <li>VDDD Voltage: 3300 mV</li>
 </ul>
 <p >See the <a href="md_bsp_settings.html">BSP Setttings</a> for additional board specific configuration settings.</p>
 <h1><a class="anchor" id="autotoc_md8"></a>
 API Reference Manual</h1>
-<p >The CY8CKIT-062S2-43012 Board Support Package provides a set of APIs to configure, initialize and use the board resources.</p>
+<p >The KIT_PSC3M5_EVK Board Support Package provides a set of APIs to configure, initialize and use the board resources.</p>
 <p >See the <a href="modules.html">BSP API Reference Manual</a> for the complete list of the provided interfaces.</p>
 <h1><a class="anchor" id="autotoc_md9"></a>
 More information</h1>
 <ul>
-<li><a href="modules.html">CY8CKIT-062S2-43012 BSP API Reference Manual</a></li>
-<li><a href="http://www.cypress.com/CY8CKIT-062S2-43012">CY8CKIT-062S2-43012 Documentation</a></li>
+<li><a href="modules.html">KIT_PSC3M5_EVK BSP API Reference Manual</a></li>
+<li><a href="http://www.infineon.com/KIT_PSC3M5_EVK">KIT_PSC3M5_EVK Documentation</a></li>
 <li><a href="http://www.cypress.com">Cypress Semiconductor, an Infineon Technologies Company</a></li>
 <li><a href="https://github.com/infineon">Infineon GitHub</a></li>
 <li><a href="https://www.cypress.com/products/modustoolbox-software-environment">ModusToolbox™</a></li>
 </ul>
 <hr  />
-<p> © Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2019-2022. </p>
+<p> © Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2019-2024. </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -165,7 +173,7 @@ More information</h1>
 <div id="nav-path" class="navpath">
     <ul>
         <li class="footer">
-            Generated for <b>CY8CKIT-062S2-43012 BSP</b> by <b>Cypress Semiconductor Corporation</b>.
+            Generated for <b>KIT_PSC3M5_EVK BSP</b> by <b>Cypress Semiconductor Corporation</b>.
             All rights reserved.
         </li>
     </ul>

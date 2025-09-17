@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['cy8ckit_2d062s2_2d43012_20bsp_0',['CY8CKIT-062S2-43012 BSP',['../index.html',1,'']]]
+  ['kit_5fpsc3m5_5fevk_20bsp_0',['KIT_PSC3M5_EVK BSP',['../index.html',1,'']]]
 ];

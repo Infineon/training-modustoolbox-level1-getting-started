@@ -1,8 +1,8 @@
-# CY8CKIT-062S2-43012 BSP
+# KIT_PSC3M5_EVK BSP
 
 ## Overview
 
-The CY8CKIT-062S2-43012 PSoC™ 6S2 Wi-Fi BT Pioneer Kit is a low-cost hardware platform that enables design and debug of PSoC™ 6 MCUs. It comes with a Murata 1LV Module (CYW43012 Wi-Fi + Bluetooth Combo Chip), industry-leading CAPSENSE™ for touch buttons and slider, on-board debugger/programmer with KitProg3, microSD card interface, 512-Mb Quad-SPI NOR flash, PDM-PCM microphone interface.
+The PSOC™ Control C3 MCU Evaluation Kit (KIT_PSC3M5_EVK) is based on the PSOC™ Control family of devices.  It enables the evaluation and development of applications for the PSOC™ Control C3 MCU.
 
 ![](docs/html/board.png)
 
@@ -12,22 +12,24 @@ To use code from the BSP, simply include a reference to `cybsp.h`.
 
 ### Kit Features:
 
-* Support of up to 2MB Flash and 1MB SRAM
-* Dedicated SDHC to interface with WICED wireless devices.
-* Delivers dual-cores, with a 150-MHz Arm Cortex-M4 as the primary application processor and a 100-MHz Arm Cortex-M0+ as the secondary processor for low-power operations.
-* Supports Full-Speed USB, capacitive-sensing with CAPSENSE, a PDM-PCM digital microphone interface, a Quad- SPI interface, 13 serial communication blocks, 7 programmable analog blocks, and 56 programmable digital blocks.
+* PSoC™ Control C3M5 (Arm® Cortex®-M33 based) Microcontroller
+* PSOC™ 5LP based KitProg3 programmer and debugger with USB Type-C connector
+* Two user LEDs, two user buttons, and a reset button for the PSC3M5
+* Headers compatible with MIKROE’s mikroBUS shields
+* Headers compatible with Arduino Uno R3
+* Mode button and a mode LED for KitProg3
+* Potentiometer that can be used to simulate analog sensor output
 
 ### Kit Contents:
 
-* PSoC™ 6S2 Wi-Fi BT Pioneer Board
-* USB Type-A to Micro-B cable
-* Quick Start Guide
-* Four jumper wires (4 inches each)
-* Two jumper wires (5 inches each)
+* PSOC™ Control C3M5 Evaluation Kit
+* USB Type-A to Type-C cable
+* Jumper wires
+* Quick start guide (printed on kit package)
 
 ## BSP Configuration
 
-The BSP has a few hooks that allow its behavior to be configured. Some of these items are enabled by default while others must be explicitly enabled. Items enabled by default are specified in the CY8CKIT-062S2-43012.mk file. The items that are enabled can be changed by creating a custom BSP or by editing the application makefile.
+The BSP has a few hooks that allow its behavior to be configured. Some of these items are enabled by default while others must be explicitly enabled. Items enabled by default are specified in the KIT_PSC3M5_EVK.mk file. The items that are enabled can be changed by creating a custom BSP or by editing the application makefile.
 
 Components:
 * Device specific category reference (e.g.: CAT1) - This component, enabled by default, pulls in any device specific code for this board.
@@ -42,13 +44,16 @@ Defines:
 | Clock    | Source    | Output Frequency |
 |----------|-----------|------------------|
 | FLL      | IMO       | 100.0 MHz        |
-| PLL      | IMO       | 48.0 MHz         |
-| CLK_HF0  | CLK_PATH0 | 100 MHz          |
+| CLK_HF0  | CLK_PATH1 | 180 MHz          |
+| CLK_HF1  | CLK_PATH1 | 180 MHz          |
+| CLK_HF2  | CLK_PATH0 | 100 MHz          |
+| CLK_HF3  | CLK_PATH2 | 240 MHz          |
+| CLK_HF4  | CLK_PATH0 | 100 MHz          |
 
 ### Power Configuration
 
-* System Active Power Mode: LP
-* System Idle Power Mode: Deep Sleep
+* System Active Power Mode: OD
+* System Idle Power Mode: CPU Sleep 
 * VDDA Voltage: 3300 mV
 * VDDD Voltage: 3300 mV
 
@@ -56,19 +61,19 @@ See the [BSP Setttings][settings] for additional board specific configuration se
 
 ## API Reference Manual
 
-The CY8CKIT-062S2-43012 Board Support Package provides a set of APIs to configure, initialize and use the board resources.
+The KIT_PSC3M5_EVK Board Support Package provides a set of APIs to configure, initialize and use the board resources.
 
 See the [BSP API Reference Manual][api] for the complete list of the provided interfaces.
 
 ## More information
-* [CY8CKIT-062S2-43012 BSP API Reference Manual][api]
-* [CY8CKIT-062S2-43012 Documentation](http://www.cypress.com/CY8CKIT-062S2-43012)
+* [KIT_PSC3M5_EVK BSP API Reference Manual][api]
+* [KIT_PSC3M5_EVK Documentation](http://www.infineon.com/KIT_PSC3M5_EVK)
 * [Cypress Semiconductor, an Infineon Technologies Company](http://www.cypress.com)
 * [Infineon GitHub](https://github.com/infineon)
 * [ModusToolbox™](https://www.cypress.com/products/modustoolbox-software-environment)
 
-[api]: https://infineon.github.io/TARGET_CY8CKIT-062S2-43012/html/modules.html
-[settings]: https://infineon.github.io/TARGET_CY8CKIT-062S2-43012/html/md_bsp_settings.html
+[api]: https://infineon.github.io/TARGET_KIT_PSC3M5_EVK/html/modules.html
+[settings]: https://infineon.github.io/TARGET_KIT_PSC3M5_EVK/html/md_bsp_settings.html
 
 ---
-© Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2019-2022.
+© Cypress Semiconductor Corporation (an Infineon company) or an affiliate of Cypress Semiconductor Corporation, 2019-2024.

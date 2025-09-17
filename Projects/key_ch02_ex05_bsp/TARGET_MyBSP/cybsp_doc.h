@@ -23,8 +23,8 @@
 #if defined(CY_USING_HAL)
 #include "cyhal_pin_package.h"
 #endif
-#if defined(COMPONENT_CAT4) /* CAT4 does not have configurators so the BSP defines pins in a
-                             * non-generated header */
+/* CAT4 and CAT5 do not have configurators so the BSP defines pins in a non-generated header */
+#if defined(COMPONENT_CAT4)
 #include "cybsp_pins.h"
 #else
 #include "cycfg.h"
@@ -357,11 +357,15 @@ extern "C" {
 /** Pin: WIFI Host Wakeup \def CYBSP_WIFI_HOST_WAKE
  */
 
+#ifndef CYBSP_WIFI_HOST_WAKE_GPIO_DM
 /** WiFi host-wake GPIO drive mode */
 #define CYBSP_WIFI_HOST_WAKE_GPIO_DM (CYHAL_GPIO_DRIVE_ANALOG)
+#endif
+#ifndef CYBSP_WIFI_HOST_WAKE_IRQ_EVENT
 /** WiFi host-wake IRQ event */
 #define CYBSP_WIFI_HOST_WAKE_IRQ_EVENT (CYHAL_GPIO_IRQ_RISE)
 #endif
+#endif // ifdef CYBSP_WIFI_HOST_WAKE
 #ifdef CYBSP_BT_UART_RX
 /** Pin: BT UART RX \def CYBSP_BT_UART_RX
  */
