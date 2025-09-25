@@ -8,7 +8,7 @@ This is a "Level 1" class, which means that it is intended as an entry point to 
 
 ## Organization
 
-- *Manual*:    This directory contains the manual chapters.
+- *Manual*:    This directory contains the manual chapters. 
 - *Projects*:  This directory contains solutions to exercises.
 
 ## Manual Chapters
